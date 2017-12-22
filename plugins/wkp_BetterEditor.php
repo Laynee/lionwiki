@@ -114,6 +114,6 @@ class BetterEditor
 
 		if($LANG != "en" && isset($this->{$LANG . "_strings"}))
 			foreach($this->{$LANG . "_strings"} as $str)
-				$this->strings = $str[1];
+				$this->strings[$str[0]] = $str[1];
 	}
 }
